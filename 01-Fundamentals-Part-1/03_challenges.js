@@ -66,6 +66,31 @@ if (requirementDolphins && (averageDolphins > averageKoalas)) {
 } else {
     console.log(`Draw! ${averageDolphins} / ${averageKoalas}`);
 }
+
+//
+
+//Data 1
+const bill = 275
+//Data 2
+// const bill = 40
+//Data 3
+// const bill = 430
+
+const tip = bill >= 50 && bill <= 300 ? bill * 15/100 : bill * 20/100
+
+// let tip
+
+// if (bill >= 50 && bill <= 300) {
+//     tip = bill * 15/100
+// } else {
+//     tip = bill * 20/100
+// }
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}.`);
 */
 //
+
+
+
+
 

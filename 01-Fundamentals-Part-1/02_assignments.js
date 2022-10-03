@@ -1,7 +1,7 @@
 /*
 let country = "Bulgaria"
-let continet = "Continent"
-let population = "Population"
+let continet = "Europe"
+let population = 6.7
 
 console.log(country)
 console.log(continet)
@@ -136,6 +136,14 @@ switch (language) {
         console.log('Great language too!')
         break;
 }
+
+//
+
+const bulgarianPopultion = 6.7
+
+const greatedThanAverage = bulgarianPopultion > 33 ? `Bulgaria's population is above average` : `Bulgaria's population is below average`
+
+console.log(greatedThanAverage);
 */
 //
 
