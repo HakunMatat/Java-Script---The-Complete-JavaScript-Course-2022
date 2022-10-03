@@ -46,3 +46,25 @@ if (markBMI > johnBMI) {
 */
 //
 
+// Data 1
+// let averageDolphins = (96 + 108 + 89) / 3
+// let averageKoalas = (88 + 91 + 110) / 3
+// Data 2
+// let averageDolphins = (97 + 112 + 101) / 3
+// let averageKoalas = (109 + 95 + 123) / 3
+// Data 3
+let averageDolphins = (97 + 112 + 101) / 3
+let averageKoalas = (109 + 95 + 106) / 3
+
+
+
+let requirementDolphins = (averageDolphins >= 100)
+let requirementKoalas = (averageKoalas >= 100)
+
+if (requirementDolphins && (averageDolphins > averageKoalas)) {
+    console.log(`Dolphins Win! ${averageDolphins}/${averageKoalas}`);
+} else if (requirementKoalas && (averageKoalas > averageDolphins)) {
+    console.log(`Koalas Win! ${averageDolphins}/${averageKoalas}`);
+} else {
+    console.log(`Draw! ${averageDolphins}/${averageKoalas}`);
+}

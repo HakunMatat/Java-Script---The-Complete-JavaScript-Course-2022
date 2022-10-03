@@ -91,6 +91,25 @@ if (numNeighbours === 1) {
 } else {
     console.log(`No borders!`);
 }
+
+//
+
+const language = 'Bulgarian'
+const population = 6.8
+const isIsland = false
+
+let sarahLanguage =  ('English' === language) // False
+let sarahPopulation = 50 > population         // True
+let sarahIsIsland = false                     // True
+
+const sarahCondition = sarahPopulation && !sarahIsIsland && sarahLanguage
+console.log(sarahCondition);
+
+if (sarahCondition) {
+    console.log('You should live in Bulgaria!');
+} else {
+    console.log('Bulgaria does not meet your criteria');
+}
 */
 //
 
