@@ -40,6 +40,35 @@ let averagePopulation = 33000000
 console.log(averagePopulation < bulgarianPopulation)
 
 let description = 'Portugal is in europe, and its 11 million people speak portuguese.'
+
+//
+
+let country = `Bulgaria`
+let language = `Bulgarian`
+let bulgarianPopulation = 6800000
+let halfOfPopulation = bulgarianPopulation / 2
+console.log(halfOfPopulation)
+
+console.log(bulgarianPopulation + 1)
+
+let finlandPopulation = 6000000
+console.log(finlandPopulation > bulgarianPopulation)
+
+let averagePopulation = 33000000
+console.log(averagePopulation < bulgarianPopulation)
+
+console.log(`${country} is in Europe, and its ${bulgarianPopulation} people speak ${language}. `)
+
+//
+
+let bulgarianPopulation = 6.8
+let averagePopulation = 33
+
+if (bulgarianPopulation > averagePopulation) {
+    console.log(`Bulgaria's population is above average.`)
+} else {
+    console.log(`Bulgaria's population is ${averagePopulation - bulgarianPopulation} million below average.`)
+}
 */
 //
 

@@ -105,7 +105,7 @@ console.log(x, y)
 
 const averageAge = (ageJonas + ageSarah) / 2
 console.log(averageAge)
-*/
+
 //
 
 const firstName = 'Jonas'
@@ -120,3 +120,40 @@ console.log(jonas)
 const jonasNew = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job}!`
 
 console.log(jonasNew)
+
+console.log(`Just a regular string...`)
+
+console.log('String with \n\
+multiple \n\
+lines.')
+
+console.log(`String with
+multiple
+lines.`)
+
+//
+
+let age = 15
+
+if (age >= 18) {
+    console.log(`Sarah can start her driving license course.`)
+} else {
+    let yearsLeft = 18 - age
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years.`)
+}
+
+const birthYear = 1991
+let century
+
+if (birthYear <= 1999) {
+    century = 20
+    console.log(`You are born in the 20th century!`)
+} else {
+    century = 21
+    console.log(`You are born in the 21st century!`)
+}
+
+console.log(century)
+*/
+//
+
