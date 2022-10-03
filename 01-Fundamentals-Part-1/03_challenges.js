@@ -43,7 +43,7 @@ if (markBMI > johnBMI) {
 } else {
     console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
 }
-*/
+
 //
 
 // Data 1
@@ -56,15 +56,16 @@ if (markBMI > johnBMI) {
 let averageDolphins = (97 + 112 + 101) / 3
 let averageKoalas = (109 + 95 + 106) / 3
 
-
-
 let requirementDolphins = (averageDolphins >= 100)
 let requirementKoalas = (averageKoalas >= 100)
 
 if (requirementDolphins && (averageDolphins > averageKoalas)) {
-    console.log(`Dolphins Win! ${averageDolphins}/${averageKoalas}`);
+    console.log(`Dolphins Win! ${averageDolphins} / ${averageKoalas}`);
 } else if (requirementKoalas && (averageKoalas > averageDolphins)) {
-    console.log(`Koalas Win! ${averageDolphins}/${averageKoalas}`);
+    console.log(`Koalas Win! ${averageDolphins} / ${averageKoalas}`);
 } else {
-    console.log(`Draw! ${averageDolphins}/${averageKoalas}`);
+    console.log(`Draw! ${averageDolphins} / ${averageKoalas}`);
 }
+*/
+//
+
