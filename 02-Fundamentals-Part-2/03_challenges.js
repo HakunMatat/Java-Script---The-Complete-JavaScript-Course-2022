@@ -12,8 +12,8 @@ const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
 const calcAverageDolphins = calcAverage(15,15,15)
 const calcAverageKoalas = calcAverage(15,15,15)
 
-console.log(`The average score of the dolphins is : ${calcAverageDolphins}.`);
-console.log(`The average score of the Koalas is : ${calcAverageKoalas}.`);
+console.log(`The average score of the Dolphins is ${calcAverageDolphins}.`);
+console.log(`The average score of the Koalas is ${calcAverageKoalas}.`);
 
 function checkWinner(avgDolphins, avgKoalas) {
 
