@@ -1,1 +1,1 @@
-console.log('Toshko');
+'use strict'
