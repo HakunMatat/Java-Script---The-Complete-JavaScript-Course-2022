@@ -52,3 +52,41 @@ function calcTotal(bill, tips) {
 */
 //
 
+const mark = {
+   firstName: 'Mark',
+   lastName: 'Miller',
+   mass: 78,
+   height: 1.69,
+   calcBMI: function () {
+      this.bmi = this.mass / this.height ** 2
+      return this.bmi
+   },
+   getSummary: function () {
+      if (mark.calcBMI() > john.calcBMI()) {
+         console.log(`Mark's BMI (${mark.calcBMI()}) is higher than John's (${john.calcBMI()})`);
+      } else {
+         console.log(`John's BMI (${john.calcBMI()}) is higher than Marks's (${mark.calcBMI()})`);
+      }
+   },
+}
+
+const john = {
+   firstName: 'John',
+   lastName: 'Smith',
+   mass: 92,
+   height: 1.95,
+   calcBMI: function () {
+      this.bmi = this.mass / this.height ** 2
+      return this.bmi
+   },
+   getSummary: function () {
+      if (mark.calcBMI() > john.calcBMI()) {
+         console.log(`Mark's BMI (${mark.calcBMI()}) is higher than John's (${john.calcBMI()})!`);
+      } else {
+         console.log(`John's BMI (${john.calcBMI()}) is higher than Marks's (${mark.calcBMI()})!`);
+      }
+   },
+}
+
+mark.getSummary()
+john.getSummary()

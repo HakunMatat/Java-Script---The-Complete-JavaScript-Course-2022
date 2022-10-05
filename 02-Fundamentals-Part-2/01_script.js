@@ -238,6 +238,45 @@ console.log(jonas);
 // 'Jonas has 3 friends, and his best friend is called Michael'
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`)
+
+//
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriverLicense: false,
+    // calcAge: function() {
+    //     console.log(this);
+    //     return 2037 - this.birthYear
+    // }
+    // calcAge: function(birthYear) {
+    //     return 2037 - birthYear
+    // }
+    calcAge: function() {
+        if (this.hasDriverLicense) {
+            console.log(`${this.firstName} is a ${2037 - this.birthYear}-years old ${this.job}. And has a driver license.`)
+        } else {
+            console.log(`${this.firstName} is a ${2037 - this.birthYear}-years old ${this.job}. And doesn't have a driver license.`)
+        }
+    },
+}
+
+// console.log(jonas.calcAge())
+
+// console.log(jonas.age)
+// console.log(jonas.age)
+// console.log(jonas.age)
+
+
+// console.log(jonas['calcAge'](1991))
+
+// Challenge
+// "Jonas is a 46-years old teacher. And has a driver license."
+
+console.log(jonas.calcAge());
 */
 //
 
