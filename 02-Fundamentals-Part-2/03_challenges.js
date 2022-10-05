@@ -32,7 +32,7 @@ checkWinner(calcAverageDolphins, calcAverageKoalas)
 
 //
 
-// Data 
+// Data
 const bill = [125, 555, 44]
 console.log(bill);
 const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])]
@@ -49,7 +49,7 @@ function calcTip(bill) {
 function calcTotal(bill, tips) {
    return bill + tips
 }
-*/
+
 //
 
 const mark = {
@@ -90,3 +90,7 @@ const john = {
 
 mark.getSummary()
 john.getSummary()
+
+*/
+//
+

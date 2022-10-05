@@ -54,7 +54,7 @@ if (populations.length === 4) {
     console.log('The array does have 4 elements')
 }   else {
     console.log('The array does not have 4 elements')
-} 
+}
 
 function percentageOfWorld1(population) {
     return (population/7900) * 100
@@ -96,10 +96,10 @@ const myCountry = {
 }
 
 const countryNeighbours = [
-    'Macedonia', 
-    'Romania', 
-    'Greece', 
-    'Serbia', 
+    'Macedonia',
+    'Romania',
+    'Greece',
+    'Serbia',
     'Turkey'
 ]
 
@@ -118,6 +118,26 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 console.log(myCountry.population + 2)
 
 console.log(myCountry['population'] - 2);
+
+//
+
+let myCountry = {
+    country: 'Bulgaria',
+    capital: 'Sofia',
+    language: 'bulgarian',
+    population: 6.7,
+    neighbours: ['Macedonia', 'Romania', 'Greece', 'Serbia', 'Turkey'],
+    describe: function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`)
+    },
+    checkIsIsland: function () {
+        this.neighbours.length = 0 ? this.isIsland = true : this.isIsland = false
+        return this.isIsland
+    },
+}
+
+myCountry.describe()
+console.log(myCountry.checkIsIsland())
 */
 //
 
