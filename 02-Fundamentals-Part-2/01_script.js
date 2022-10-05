@@ -102,6 +102,142 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 yearsUntilRetirement(1991, 'Jonas')
 yearsUntilRetirement(1934, 'Jonas')
+
+//
+
+const friend1 = 'Michael'
+const friend2 = 'Steven'
+const friend3 = 'Peter'
+
+let friends = ['Michael', 'Steven', 'Peter']
+console.log(friends)
+
+const years = new Array(1991, 1984, 2008, 2020)
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay'
+console.log(friends);
+
+friends = ['Bot', 'Alice']
+console.log(friends);
+
+const firstName = 'Jonas'
+const lastName = 'Schmedtmann'
+const jonas = [firstName, lastName, 2037 - 1991, 'teacher', friends]
+
+console.log(jonas);
+
+// Exercise
+const calcAge = function (birthYear) {
+    return 2037 - birthYear
+}
+
+const years = [1990, 1967, 2002, 2010, 2018]
+
+const age1 = calcAge(years[0])
+const age2 = calcAge(years[1])
+const age3 = calcAge(years[years.length - 1])
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
+
+console.log(ages);
+
+//
+
+// Add elements
+const friends = ['Michael', 'Steven', 'Peter']
+const newLenght= friends.push('Jay') // Add an element at the last position
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('John') // Add an element at the first position
+console.log(friends);
+
+// Remove elements
+friends.pop() // Remove the last element of the array
+const popped = friends.pop()
+console.log(popped);
+console.log(friends);
+
+friends.shift() // Remove the first element of the array
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23) // uses ===
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes('23')); // This is string 
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+    console.log('You have a friend called Steven.');
+} else {
+    console.log(`You don't have a friend called Steven`);
+}
+
+//
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtman',
+    2037 - 1991,
+    'teacher'
+    ['Michael', 'Peter', 'Steven']
+]
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+}
+
+//
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+}
+
+console.log(jonas.lastName)     
+console.log(jonas['lastName']) // We can put any expression(operation).
+
+const nameKey = 'Name'
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+//console.log(jonas.'last' + nameKey);
+
+const interestedIn = prompt('What do you want to know about Jonas? (firstName, lastName, age, job, friends')
+
+const promptAnswer = jonas[interestedIn]
+
+if (promptAnswer === undefined) {
+    console.log('There is no such characteristic on the object.');
+} else {
+    console.log(jonas[interestedIn]);
+}
+
+jonas.location = 'Portugal'
+jonas['twitter'] = '@jonasschmedtman'
+console.log(jonas);
+
+// Challenge
+// 'Jonas has 3 friends, and his best friend is called Michael'
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`)
 */
 //
 

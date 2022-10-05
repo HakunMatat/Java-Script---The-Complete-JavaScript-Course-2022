@@ -45,6 +45,79 @@ function describePopulation(country, population) {
 const chinaDescription = describePopulation('China', 1441)
 const bulgariaDescription = describePopulation('Bulgaria', 6.7)
 const cyprusDescription = describePopulation('Cyprus', 1.4)
+
+//
+
+let populations = [6.8, 1441, 120, 1.4]
+
+if (populations.length === 4) {
+    console.log('The array does have 4 elements')
+}   else {
+    console.log('The array does not have 4 elements')
+} 
+
+function percentageOfWorld1(population) {
+    return (population/7900) * 100
+}
+
+let percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])]
+
+console.log(percentages);
+
+//
+
+let countryNeighbours = ['Macedonia', 'Romania', 'Greece', 'Serbia', 'Turkey']
+
+countryNeighbours[countryNeighbours.length] = 'Utopia'
+console.log(countryNeighbours);
+
+countryNeighbours.pop()
+console.log(countryNeighbours);
+
+if (!countryNeighbours.includes('Germany')) {
+    console.log(`Probably not a central European country.`);
+} else {
+    console.log(`It is a central European country.`);
+}
+
+const index = countryNeighbours.indexOf('Romania')
+
+countryNeighbours.splice(index, index, 'Republic of Romania')
+
+console.log(countryNeighbours);
+
+//
+
+const myCountry = {
+    country: 'Bulgaria',
+    capital: 'Sofia',
+    language: 'Bulgarian',
+    population: 6.7,
+}
+
+const countryNeighbours = [
+    'Macedonia', 
+    'Romania', 
+    'Greece', 
+    'Serbia', 
+    'Turkey'
+]
+
+//
+
+let myCountry = {
+    country: 'Bulgaria',
+    capital: 'Sofia',
+    language: 'bulgarian',
+    population: 6.7,
+    neighbours: ['Macedonia', 'Romania', 'Greece', 'Serbia', 'Turkey']
+}
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+console.log(myCountry.population + 2)
+
+console.log(myCountry['population'] - 2);
 */
 //
 

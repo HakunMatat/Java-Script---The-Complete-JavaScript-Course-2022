@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
 
 //Data 1
@@ -17,12 +17,9 @@ console.log(`The average score of the Koalas is ${calcAverageKoalas}.`);
 
 function checkWinner(avgDolphins, avgKoalas) {
 
-    const calcAverageKaoalas = avgKoalas
-    const calcAverageDolphins = avgDolphins
-
-    if (avgDolphins > 2 * avgKoalas) {
+ if (avgDolphins >= 2 * avgKoalas) {
        return console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`)
-    } else if (avgKoalas > 2 * avgDolphins) {
+    } else if (avgKoalas >= 2 * avgDolphins) {
        return console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`)
     } else if (avgKoalas === avgDolphins) {
        return console.log('The match is draw!')
@@ -32,3 +29,26 @@ function checkWinner(avgDolphins, avgKoalas) {
 }
 
 checkWinner(calcAverageDolphins, calcAverageKoalas)
+
+//
+
+// Data 
+const bill = [125, 555, 44]
+console.log(bill);
+const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])]
+console.log(tips);
+const total = [calcTotal(bill[0], tips[0]), calcTotal(bill[1], tips[1]), calcTotal(bill[2], tips[2])]
+console.log(total);
+
+// console.log(calcTotal(bill[0], tips[0]));
+
+function calcTip(bill) {
+   return bill >= 50 && bill <= 300 ? bill * 15/100 : bill * 20/100
+}
+
+function calcTotal(bill, tips) {
+   return bill + tips
+}
+*/
+//
+
