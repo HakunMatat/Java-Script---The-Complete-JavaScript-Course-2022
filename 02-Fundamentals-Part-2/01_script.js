@@ -59,7 +59,7 @@ const age = calcAge(1991)
 console.log(age);
 
 const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2022 - birthYear 
+    const age = 2022 - birthYear
     const retirement = 65 - age
     return `${firstName} retires in ${retirement} years.`
 }
@@ -174,7 +174,7 @@ console.log(friends.indexOf('Bob'));
 friends.push(23) // uses ===
 console.log(friends.includes('Steven'));
 console.log(friends.includes('Bob'));
-console.log(friends.includes('23')); // This is string 
+console.log(friends.includes('23')); // This is string
 console.log(friends.includes(23));
 
 if (friends.includes('Steven')) {
@@ -211,7 +211,7 @@ const jonas = {
     friends: ['Michael', 'Peter', 'Steven'],
 }
 
-console.log(jonas.lastName)     
+console.log(jonas.lastName)
 console.log(jonas['lastName']) // We can put any expression(operation).
 
 const nameKey = 'Name'
