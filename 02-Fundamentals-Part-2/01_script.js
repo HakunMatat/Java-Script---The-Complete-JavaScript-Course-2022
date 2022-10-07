@@ -353,7 +353,7 @@ for (let rep = 1; rep <= 10; rep++) {
 
 //     console.log(JonasArray[i], typeof JonasArray[i]);
 // }
-*/
+
 //
 
 const JonasArray = [
@@ -362,11 +362,22 @@ const JonasArray = [
     2037 - 1991,
     'teacher',
     ['Michael', ' Peter', 'Steven'],
+    true,
 ]
 
 // 0, 1, ..., 4
 // 4, 3, ..., 0
 
-for (let i = JonasArray.length - 1; i >= 0; i--) {
+// for (let i = JonasArray.length - 1; i >= 0; i--) {
+//     console.log(i, JonasArray[i]);
+// }
 
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`------ Starting Exercise (${exercise})------`)
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weights repetition (${rep})`)
+    }
 }
+*/
+//
+
