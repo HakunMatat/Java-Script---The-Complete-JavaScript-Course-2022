@@ -138,7 +138,7 @@ let myCountry = {
 
 myCountry.describe()
 console.log(myCountry.checkIsIsland())
-*
+
 //
 
 for (let voters = 1; voters <= 50; voters++) {
@@ -155,7 +155,7 @@ for (let i = 0; i < populations.length; i++) {
 }
 
 console.log(percentages2);
-*/
+
 //
 
 const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
@@ -166,3 +166,24 @@ for (let i = 0; i < listOfNeighbours.length; i++) { // i = 0 , i = 1, i = 2
         console.log(`Neighbour: ${listOfNeighbours[i][r]}`);
 }
 
+
+//
+
+let populations = [6.8, 1441, 120, 1.4]
+let percentages2 = []
+
+// for (let i = 0; i < populations.length; i++) {
+//     percentages2.push(populations[i] / 7900 * 100)
+// }
+
+let i = 0
+while (i < populations.length) {
+    percentages2.push(populations[i] / 7900 * 100)
+    i++
+}
+
+console.log(percentages2);
+
+// for loop was better in this situation. Because it looks cleaner
+
+*/
