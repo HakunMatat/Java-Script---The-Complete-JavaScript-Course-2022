@@ -144,6 +144,17 @@ console.log(myCountry.checkIsIsland())
 for (let voters = 1; voters <= 50; voters++) {
     console.log(`Voter number ${voters}, is currently voting.`)
 }
+
+//
+
+let populations = [6.8, 1441, 120, 1.4]
+let percentages2 = []
+
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push(populations[i] / 7900 * 100)
+}
+
+console.log(percentages2);
 */
 //
 
