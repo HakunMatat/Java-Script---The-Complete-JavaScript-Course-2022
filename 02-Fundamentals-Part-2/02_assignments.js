@@ -138,6 +138,12 @@ let myCountry = {
 
 myCountry.describe()
 console.log(myCountry.checkIsIsland())
+*
+//
+
+for (let voters = 1; voters <= 50; voters++) {
+    console.log(`Voter number ${voters}, is currently voting.`)
+}
 */
 //
 

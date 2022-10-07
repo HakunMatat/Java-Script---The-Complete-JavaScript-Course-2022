@@ -277,6 +277,82 @@ const jonas = {
 // "Jonas is a 46-years old teacher. And has a driver license."
 
 console.log(jonas.calcAge());
+
+//
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+
+// for loop keeps running while condition is true
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`)
+}
+
+//
+
+// const JonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', ' Peter', 'Steven'],
+// ]
+
+// const types = [];
+
+// for (let i = 0; i < JonasArray.length; i++) {
+//     // Reading from JonasArray
+//     console.log(JonasArray[i], typeof JonasArray[i]);
+
+//     // Filling types array
+//     // types[i] = typeof JonasArray[i]
+//     types.push(typeof JonasArray[i])
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020]
+// const ages = []
+// const currentYear = 2022
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(currentYear - years[i])
+// }
+
+// console.log(ages);
+
+// continue and break
+
+// const JonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', ' Peter', 'Steven'],
+//     true
+// ]
+
+// console.log('---- ONLY STRING ----');
+// for (let i = 0; i < JonasArray.length; i++) {
+//     if (typeof JonasArray[i] !== 'string') continue;
+
+//     console.log(JonasArray[i], typeof JonasArray[i]);
+// }
+
+// console.log('---- BREAK WITH NUMBER ----');
+// for (let i = 0; i < JonasArray.length; i++) {
+//     if (typeof JonasArray[i] === 'number') break;
+
+//     console.log(JonasArray[i], typeof JonasArray[i]);
+// }
 */
 //
 
