@@ -7,7 +7,7 @@ const x = '123'
 console.log(x)
 console.log()
 console.log()
-*/
+
 //
 
 // const measureKelvin = function () {
@@ -50,28 +50,30 @@ console.log()
 
 //
 
-// const calcTempAmplitudeBug = (bb, eeb) => {
-//   const temps = bb.concat(eeb);
+const calcTempAmplitudeBug = (bb, eeb) => {
+  const temps = bb.concat(eeb);
 
-//   let max = temps[0];
-//   let min = temps[0];
-//   console.log(max);
+  let max = temps[0];
+  let min = temps[0];
+  console.log(max);
 
-//   const tempsLength = temps.length;
+  for (let i = 0; i < temps.length; i++) {
+    let curTemp = temps[i];
 
-//   for (let i = 0; i < tempsLength; i++) {
-//     let curTemp = temps[i];
+    if (typeof curTemp !== 'number') continue;
 
-//     if (curTemp > max) {
-//       max = curTemp;
-//     }
-//     if (curTemp < min) {
-//       min = curTemp;
-//     }
-//   }
-//   console.log(min, max);
-//   return max - min;
-// };
+    if (curTemp > max) {
+      max = curTemp;
+    }
+    if (curTemp < min) {
+      min = curTemp;
+    }
+  }
+  console.log(min, max);
+  return max - min;
+};
 
-// const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
-// console.log(amplitudeBug);
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1, 'error'], [9, 4, 5]);
+console.log(amplitudeBug);
+*/
+//
