@@ -75,20 +75,20 @@ const calcTempAmplitudeBug = (bb, eeb) => {
 
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1, 'error'], [9, 4, 5]);
 console.log(amplitudeBug);
-*/
+
 //
 
 // Data 1
 // const arr = [17, 21, 23];
 // Data 2
 const arr = [12, 5, -5, 0, 4];
-
-const days = arr.length;
+const days = [];
 
 const printForecast = function (temp, days) {
     for (let i = 0; i < arr.length; i++) {
         const numberOfDays = arr.indexOf(arr[i]);
-        console.log(`${arr[i]}ºC in ${numberOfDays + 1} days`);
+        days.push(numberOfDays);
+        // const days = console.log(`${arr[i]}ºC in ${numberOfDays + 1} days`);
     }
 };
 
@@ -96,3 +96,5 @@ printForecast();
 
 // Problem one: We need to make the days equal to the tempetures lenghts
 // Problem two: We need to make a loop so it can count 1,2,3.. and print everything on one line
+*/
+//
