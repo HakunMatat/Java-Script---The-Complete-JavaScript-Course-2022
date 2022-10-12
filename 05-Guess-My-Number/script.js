@@ -11,6 +11,8 @@ console.log(document.querySelector('.guess').value);
 */
 
 let secretNumber = Math.ceil(Math.random() * 20);
+let guess = 20;
+let highscore = 0;
 
 // Check! - Button
 document.querySelector('.check').addEventListener('click', function () {
@@ -28,6 +30,11 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.number').textContent = secretNumber;
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '30rem';
+
+        if (score > highscore) {
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+        }
 
         // When player's number is too high.
     } else if (guess > secretNumber && !(guess < 0) && !(guess > 20)) {
@@ -70,3 +77,5 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('.number').textContent = '?';
     document.querySelector('.guess').value = '';
 });
+
+console.log(secretNumber);
