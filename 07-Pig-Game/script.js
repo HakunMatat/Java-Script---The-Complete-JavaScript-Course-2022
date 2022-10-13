@@ -12,3 +12,4 @@ if (dice > 1) {
     document.querySelector('.score').textContent = score1 + dice;
 } else {
 }
+Edit;
