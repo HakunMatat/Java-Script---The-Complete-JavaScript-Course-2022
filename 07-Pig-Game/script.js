@@ -87,4 +87,5 @@ btnHold.addEventListener('click', function () {
     }
 });
 
+// Repeat game
 btnNew.addEventListener('click', init);
